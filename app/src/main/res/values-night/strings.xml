@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="email_demo">john@xyz.com</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signin_option">Or sign in with</string>
+    <string name="create_account">Click here to create account</string>
+    <string name="your_stats">your stats</string>
+    <string name="steps">Steps</string>
+    <string name="calories">Cal.</string>
+    <string name="heart_pts">Heart Pts.</string>
+    <string name="sleep">Sleep</string>
+    <string name="hello">Hello,</string>
+    <string name="ankit_ram_nag">Ankit Ram Nag</string>
+    <string name="day">Day</string>
+    <string name="hurray">Hurray!!</string>
+</resources>
