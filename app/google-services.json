@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "140230415229",
+    "project_id": "ajatusfit",
+    "storage_bucket": "ajatusfit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140230415229:android:f29193fb8ae5b71a64b214",
+        "android_client_info": {
+          "package_name": "com.example.ajatusfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140230415229-1lcu1ed77d2d81rbiqe958i43kpdeip2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ajatusfit",
+            "certificate_hash": "cd56e39cd4aa2419ce01b09380208f766ca6a69f"
+          }
+        },
+        {
+          "client_id": "140230415229-ru6cj3vbbsqn412kdg9b1mgalktgmlnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVl5R2mcGZbhAWSwXpm3TBda9_Ajzul8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140230415229-ru6cj3vbbsqn412kdg9b1mgalktgmlnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

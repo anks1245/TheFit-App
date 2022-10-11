@@ -16,4 +16,7 @@
     <string name="ankit_ram_nag">Ankit Ram Nag</string>
     <string name="day">Day</string>
     <string name="hurray">Hurray!!</string>
+    <string name="create_your_profile">Create Your Profile</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="date_of_birth">Date of birth</string>
 </resources>
