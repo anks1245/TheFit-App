@@ -19,4 +19,6 @@
     <string name="create_your_profile">Create Your Profile</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="date_of_birth">Date of birth</string>
+    <string name="your_weekly_stats">Your Weekly Stats</string>
+    <string name="type_something">Type Something...</string>
 </resources>

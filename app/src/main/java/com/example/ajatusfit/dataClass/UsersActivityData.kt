@@ -3,11 +3,17 @@ package com.example.ajatusfit.dataClass
 
 import com.google.gson.annotations.SerializedName
 
-data class UsersTokens(
+data class UsersActivityData(
+
     @SerializedName("name")
-    val name: String?,
+    var name: String?= "",
+
+    @SerializedName("id")
+    var id: String ?= "",
+
     @SerializedName("steps")
-    val steps: Int?,
+    var steps: Int?= 0,
+
     @SerializedName("timestamp")
-    val timestamp: String?
+    var timestamp: String?=""
 )

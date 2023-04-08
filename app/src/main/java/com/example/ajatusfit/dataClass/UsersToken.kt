@@ -1,4 +1,4 @@
 package com.example.ajatusfit.dataClass
 
-class UsersToken {
+data class UsersToken(val token:String?) {
 }

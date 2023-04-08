@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Toast
 import com.example.ajatusfit.R
+import com.example.ajatusfit.dataClass.Users
 import com.example.ajatusfit.databinding.ActivityRegisterBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -14,8 +15,10 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.material.datepicker.MaterialDatePicker
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import java.sql.Timestamp
 import java.util.*
 
 class RegisterActivity : AppCompatActivity() {
@@ -74,20 +77,27 @@ class RegisterActivity : AppCompatActivity() {
                         "password" to binding.password.text.toString(),
                         "gender" to binding.gender.text.toString(),
                         "date_of_birth" to binding.dateOfBirth.text.toString(),
+                        "profileImg_url" to signInAccount.photoUrl,
+                        "token" to signInAccount.id,
                         "is_complete" to true
                     )
 
                     db.collection("users").document(binding.email.text.toString()).set(user)
                         .addOnSuccessListener {
-                            Toast.makeText(this, "Complete Your Profile First", Toast.LENGTH_SHORT).show()
+                            val database = FirebaseDatabase.getInstance()
+                            val ref = database.getReference("users")
+
+                            val user_rtd = Users(id=signInAccount.id.toString(), name = signInAccount.displayName.toString(), steps = 0, timestamp = System.currentTimeMillis().toString())
+
+                            ref.child(signInAccount.id.toString()).setValue(user_rtd)
+
+                            Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()
                             startActivity(Intent(this,MainActivity::class.java))
                             finishAffinity()
                         }
                         .addOnFailureListener {
                             Toast.makeText(this, "ERROR: ${it.message}", Toast.LENGTH_SHORT).show()
                         }
-//                }
-//            }
         }
 
         setContentView(root)

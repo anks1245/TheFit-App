@@ -9,8 +9,8 @@ import com.example.ajatusfit.activities.SplashActivity
 class BootUpReceiver: BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {
         Toast.makeText(context, "App Started", Toast.LENGTH_SHORT).show()
-        val intent = Intent(context,SplashActivity::class.java)
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        val i = Intent(context,SplashActivity::class.java)
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         context?.startActivity(intent)
     }
 }

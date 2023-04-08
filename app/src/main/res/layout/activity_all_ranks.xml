@@ -5,5 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.AllRanksActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/none"
+        android:elevation="0dp"
+        app:elevation="0dp">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:background="@color/none"
+            app:titleTextColor="@color/red_700"
+            android:elevation="0dp">
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allranksRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:listitem="@layout/rank_list_item"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

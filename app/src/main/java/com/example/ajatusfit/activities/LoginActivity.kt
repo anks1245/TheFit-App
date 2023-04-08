@@ -113,6 +113,7 @@ class LoginActivity : AppCompatActivity() {
                             "password" to "",
                             "gender" to "",
                             "date_of_birth" to "",
+                            "token" to token,
                             "is_complete" to false
                         )
 
@@ -152,3 +153,5 @@ class LoginActivity : AppCompatActivity() {
             }
     }
 }
+
+

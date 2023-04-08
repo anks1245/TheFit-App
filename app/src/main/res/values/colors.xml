@@ -12,5 +12,7 @@
     <color name="red_500">#D60000</color>
     <color name="red_700">#CA0000</color>
 
+    <color name="border">#CCCCCC</color>
+
     <color name="none">#00FFFFFF</color>
 </resources>
